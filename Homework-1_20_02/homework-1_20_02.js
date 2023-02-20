@@ -50,13 +50,12 @@ const addUserForm = document.querySelector('.add_user_form');
 
 const storedUsers = JSON.parse(localStorage.getItem('users')) ?? users;
 
-// FIXME
 addUserForm.addEventListener('submit', event => {
   event.preventDefault();
 
   const { name, lastname, age } = event.target;
 
-  users.push({
+  storedUsers.push({
     id: Date.now(),
     firstname: name.value,
     lastname: lastname.value,
