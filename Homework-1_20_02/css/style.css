@@ -1,0 +1,19 @@
+.add_user_form {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.users_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.card {
+  width: 200px;
+  border: 1px solid teal;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
